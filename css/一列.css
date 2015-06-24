@@ -5,10 +5,9 @@
     <title>一列布局</title>
     <style>
         body{margin: 0; padding: 0}
-        .top .main .foot{width: 700px; margin: 0 auto}
-        .top{height: 100px; background: blue}
-        .main{height: 300px; background: yellow}
-        .foot{height: 100px; background: black}
+        .top{width:700px; height: 100px; margin:0 auto; background: blue}
+        .main{width: 700px; height: 300px; margin: 0 auto; background: yellow}
+        .foot{width: 700px; height: 100px; margin: 0 auto; background: black}
     </style>
 </head>
 <body>
