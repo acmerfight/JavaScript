@@ -1,3 +1,2 @@
 # JavaScript
-learn JavaScript
-sd
+learn front end
