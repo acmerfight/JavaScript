@@ -1,49 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>tab</title>
-    <style>
-        body{
+    <meta charset="utf-8">
+    <title>flex的Tab实现</title>
+    <style type="text/css">
+        body,
+        div,
+        ul,
+        li {
             margin: 0;
             padding: 0;
-            font: 14px 微软雅黑;
         }
-        ul, li{
+
+        ul,
+        li {
             list-style: none;
         }
-        .container{
+
+        .container {
             width: 574px;
             height: 160px;
+            font: 14px/32px 'microsoft yahei', serif;
             border: 1px solid #999;
             margin: 50px auto 0;
         }
-        .tab{
+
+        .tab {
             width: 100%;
             display: flex;
             justify-content: center;
         }
-        .tab li{
+
+        .tab li {
             text-align: center;
-            background: #ff11f1;
+            background: #f1f1f1;
             border-right: 1px solid #cecece;
             border-bottom: 1px solid #cecece;
             flex: 1;
         }
+
+        .tab li:last-child {
+            border-right: none;
+        }
+
+        .tab li.current {
+            background-color: #fff;
+            border-bottom: none;
+        }
+
+        .content li {
+            padding: 20px;
+            background-color: #fff;
+            display: none;
+        }
+
+        .content li.current {
+            display: block;
+        }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <ul class="tab">
-            <li class="current">课程</li>
-            <li>学习计划</li>
-            <li>技能图谱</li>
-        </ul>
-        <ul class="content">
-            <li class="courrent">课程内容</li>
-            <li>学习计划内容</li>
-            <li>技能图谱内容</li>
-        </ul>
-    </div>
+<div class="container">
+    <ul class="tab">
+        <li class="current">课程</li>
+        <li>学习计划</li>
+        <li>技能图谱</li>
+    </ul>
+    <ul class="content">
+        <li class="current">课程内容</li>
+        <li>学习计划内容</li>
+        <li>技能图谱内容</li>
+    </ul>
+</div>
 </body>
+
 </html>
