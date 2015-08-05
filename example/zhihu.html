@@ -19,15 +19,26 @@
             box-shadow: 0 1px 2px;
         }
         .zhihu_logo {
-            background-size: 61px 30px;
-            background: url(../images/logo.png) no-repeat 0 8px;
+            background-size: 60px 30px;
+            background-repeat: no-repeat;
+            background-position: 0 8px;
+            background-image: url(../images/logo.png);
             display: block;
             color: white;
-            width: 61px;
+            width: 60px;
             height: 100%;
             position: relative;
             top: 0;
             left: 300px;
+        }
+        .search-input {
+            position: fixed;
+            top: 8px;
+            left: 385px;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 25px;
+            width: 320px;
         }
         .content {
 
@@ -40,6 +51,8 @@
 <body>
     <div class="top">
         <div class="zhihu_logo"></div>
+        <input type="text" class="search-input" placeholder="搜索话题、问题或人..."/>
+        <button class="add-question">提问</button>
     </div>
     <div class="content"></div>
     <div class="footer"></div>
