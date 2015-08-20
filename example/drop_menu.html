@@ -50,10 +50,13 @@
             border-top-style: solid;
         }
         .multi_drop_menu li ul {
-            display: block;
+            display: none;
             position: absolute;
             left: 0;
             top: 100%;
+        }
+        .multi_drop_menu li:hover > ul {
+            display: block;
         }
         .multi_drop_menu li li {
             float: none;
