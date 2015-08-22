@@ -66,10 +66,33 @@
             left: 100%;
             top: 0;
         }
+
+        .multi_drop_menu.vertical {
+            width: 8em;
+        }
+        .multi_drop_menu.vertical li a{
+            border-right-style: none;
+            border-top-style: solid;
+        }
+        .multi_drop_menu.vertical li li a {
+            border-left-style: solid;
+        }
+        .multi_drop_menu.vertical ul,
+        .multi_drop_menu.vertical li {
+            float: none;
+        }
+        .multi_drop_menu.vertical li ul {
+            left: 100%;
+            top: 0;
+        }
+        .multi_drop_menu li:hover > a {
+            color: #fff;
+            background-color: #aaa;
+        }
     </style>
 </head>
 <body>
-    <nav class="multi_drop_menu">
+    <nav class="multi_drop_menu vertical">
         <!-- 一级开始 -->
         <ul>
             <li><a href="#">Power</a></li>
