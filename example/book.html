@@ -58,13 +58,54 @@
             font-size: 1em;
             color: #888;
             outline: none;
-            -webkit-transition: 2s width;
+            -webkit-transition: 1s width;
         }
         .search input:focus {
             width: 140px;
         }
         .search label {
             display: none;
+        }
+        form.search input {
+            background-color: #fff;
+        }
+        form.search input::-webkit-input-placeholder {
+            color: #ccc;
+        }
+
+        nav.menu {
+            margin: 19px auto;
+            padding: 0;
+            test-align: center;
+            font-size: .8em;
+        }
+        nav.menu > li {
+            display: inline-block;
+        }
+        nav.menu li {
+            float: left;
+            list-style-type: none;
+            position: relative;
+        }
+        nav.menu li a{
+            display: block;
+            padding: .25em .8em;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-align: left;
+            color: #fff;
+            text-decoration: none;
+        }
+        nav.menu li.choice1 a {background:#f58c21;}
+        nav.menu li.choice2 a {background:#4eb8ea;}
+        nav.menu li.choice3 a {background:#d6e636;}
+        nav.menu li.choice4 a {background:#ee4c98;}
+        nav.menu li.choice5 a {background:#f58c21;}
+        nav.menu li:hover > a {
+            color: #fff;
+            border-color: #fff;
+            border: 0
         }
     </style>
 </head>
@@ -75,7 +116,7 @@
             <h1>Stylin&#8217; with CSS</h1>
             <h2>The Blog and Books of Charles Wyke-Smith</h2>
         </section>
-        <nav><!-- 二级 -->
+        <nav class="menu"><!-- 二级 -->
             <li class="choice1"><a href="#">Articles</a></li>
             <li class="choice2"><a href="#">Books</a></li>
             <li class="choice3" ><a href="#">Resources</a></li>
