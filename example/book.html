@@ -92,6 +92,7 @@
             float: left;
             list-style-type: none;
             position: relative;
+            line-height: 1.15;
         }
         nav.menu li a {
             display: block;
@@ -102,6 +103,7 @@
             text-align: left;
             color: #fff;
             text-decoration: none;
+            -webkit-font-smoothing: antialiased;
         }
         nav.menu li.choice1 a {background:#f58c21;}
         nav.menu li.choice2 a {background:#4eb8ea;}
@@ -115,7 +117,7 @@
         nav.menu li:last-child a {
             border-bottom-right-radius: 10px;
         }
-        nav.menu:first-child a {
+        nav.menu li:first-child a {
             border-top-left-radius: 10px;
         }
     </style>
@@ -131,7 +133,7 @@
             <ul>
                 <li class="choice1"><a href="#">Articles</a></li>
                 <li class="choice2"><a href="#">Books</a></li>
-                <li class="choice3" ><a href="#">Resources</a></li>
+                <li class="choice3"><a href="#">Resources</a></li>
                 <li class="choice4"><a href="#">Bookshelf</a></li>
                 <li class="choice5"><a href="#">Contact Me</a></li>
             </ul>
