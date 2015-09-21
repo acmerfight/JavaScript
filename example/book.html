@@ -131,21 +131,22 @@
             width: 66%;
         }
         section#feature_area aside {
-            float: left;
+            float: right;
             width: 34%;
         }
         section#feature_area article .inner {
+            overflow: hidden;
             padding: 12px;
             background: #fff;
             border-radius: 20px 0;
-            box-shadow: 0px 12px 8px -9px #555;
+            box-shadow: 0 12px 8px -9px #555;
         }
         section#feature_area article a {
             text-decoration: none;
         }
         section#feature_area article img {
             float: left;
-            padding: 0px 10px 10px 0px;
+            padding: 0 10px 10px 0;
         }
         section#feature_area article h4 {
             font-family:"Source Sans Pro", helvetica, sans-serif;
@@ -161,10 +162,11 @@
             font-weight: 700;
             font-size: 1.75em;
             color: #555;
-            margin: 0px 0px 12px 0px;
+            margin: 0px 0 12px 0px;
             letter-spacing: -.05em;
         }
         section#feature_area article#blog_leadoff p {
+            font-family:"Source Sans Pro", helvetica, sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 1.1em;
@@ -172,6 +174,24 @@
             color: #616161;
             margin: 0 0px;
             text-align: justify;
+        }
+        section#feature_area article#blog_leadoff p::first-letter {
+            font-family:Lato, helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4.5em;
+            float: left;
+            margin: .05em .05em 0 0;
+            line-height: 0.6;
+            text-shadow: 1px 3px 3px #ccc;
+        }
+        section#feature_area article#blog_leadoff p::first-line {
+            font-variant: small-caps;
+            font-size: 1.2em;
+        }
+        section#feature_area aside {
+            width: 34%;
+            float: right;
         }
     </style>
 </head>
