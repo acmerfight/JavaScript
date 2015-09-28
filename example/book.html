@@ -320,6 +320,42 @@
         #feature_area nav li a:hover {
             color: #000;
         }
+
+        section#book_area {
+            clear: both;
+            border-radius: 20px 0px 20px 0px;
+            border: 1px solid #f58c21;
+            margin: 8px 0 16px;
+            overflow: hidden;
+        }
+        #book_area article {
+            float: left;
+            width: 25%;
+            padding: 10px 0;
+            background: none;
+        }
+        #book_area article .inner {
+            position: relative;
+            width: 140px;
+            margin: 0 auto;
+        }
+        #book_area .inner h3 {
+            position: absolute;
+            width: 160px;
+            left: 112%;
+            bottom: 5px;
+            transform: rotate(-90deg);
+            transform-origin: left bottom;
+            color: #ccc;
+            font-size: 1.4em;
+            font-family: Lato, helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            text-align: left;
+        }
+        #book_area article img {
+            box-shadow: 0 12px 8px -9px #555;
+        }
     </style>
 </head>
 <body>
@@ -392,6 +428,13 @@
             <div class="inner"><!-- 三级 -->
                 <h3>HTML5 + CSS3</h3><!-- 图书封面及旋转的文字-->
                 <img src="../images/stylin3.jpg" alt="Stylin' with CSS cover"/>
+                <aside>
+                    <ol>
+                        <li><a href="#">Download the Code</a></li>
+                        <li><a href="#">Table of Contents</a></li>
+                        <li><a href="#">Buy this Book</a></li>
+                    </ol>
+                </aside>
             </div>
         </article>
         <!-- article重复4次-->
