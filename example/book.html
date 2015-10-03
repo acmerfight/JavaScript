@@ -392,6 +392,9 @@
             left: 84%;
             top: 14px;
         }
+        #book_area article.right aside {/*右侧两本书*/
+            right:84%; top:14px;/*把弹出层定位在图片左侧*/
+        }
         #book_area article aside:after {
             content: '';
             position: absolute;
@@ -404,6 +407,10 @@
             right: 100%;
             border-color: transparent #f58c21 transparent transparent;
         }
+        #book_area article.right aside:after { /*右侧图书弹出层的三角形定位及颜色*/
+            left:100%;
+            border-color:transparent transparent transparent #f58c21;
+        }
         #book_area article aside:before {
             content: '';
             position: absolute;
@@ -415,6 +422,10 @@
         }
         #book_area article.left aside:before {
             right: 100%;
+            border-color: transparent white transparent transparent;
+        }
+        #book_area article.right aside:before {
+            left: 100%;
             border-color: transparent white transparent transparent;
         }
     </style>
