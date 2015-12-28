@@ -32,6 +32,21 @@
         <li class="sale important">Milk</li>
     </ul>
     <script>
+        function getElementsByClassName(node, classname){
+            if (node.getElementsByClassName) {
+                return node.getElementsByClassName(classname)
+            } else {
+                var results = [];
+                var elems = node.getElementsByTagName("*");
+                for (var i=0; i<elems.length; i++) {
+                    if (elems[i].className.indexOf(classname) != -1) {
+                        results[results.length] = elems[i];
+                    }
+                }
+                return results
+            }
+        }
+        alert(document.getElementsByClassName("sale important").length);
         alert(typeof document.getElementById("purchases"));
         alert(document.getElementsByTagName("li").length);
         var items = document.getElementsByTagName("li");
