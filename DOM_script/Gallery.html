@@ -3,33 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles/layout.css" />
 </head>
 <body>
     <h1>Snapshots</h1>
     <ul>
         <li>
-            <a href="../images/1.jpeg" onclick="showPic(this); return false" title="Alizee"> Alizee </a>
+            <a href="../images/1.jpeg" onclick="showPic(this); return false" title="Alizee01"> Alizee </a>
         </li>
         <li>
-            <a href="../images/1.jpeg" onclick="showPic(this); return false" title="Alizee"> Alizee </a>
+            <a href="../images/2.jpeg" onclick="showPic(this); return false" title="Alizee02"> Alizee </a>
         </li>
         <li>
-            <a href="../images/1.jpeg" onclick="showPic(this); return false" title="Alizee"> Alizee </a>
+            <a href="../images/3.jpeg" onclick="showPic(this); return false" title="Alizee03"> Alizee </a>
         </li>
         <li>
-            <a href="../images/1.jpeg" onclick="showPic(this); return false" title="Alizee"> Alizee </a>
+            <a href="../images/4.png" onclick="showPic(this); return false" title="Alizee04"> Alizee </a>
         </li>
     </ul>
     <img id="placeholder" src="../images/1.jpeg" alt="my image gallery" />
     <p id="description">Choose an image.</p>
-    <script>
-        function countBodyChildren() {
-            var body_element = document.getElementsByTagName("body")[0]
-            alert((body_element.nodeType))
-        }
-//        countBodyChildren()
-        window.onload = countBodyChildren()
-    </script>
-    <!--<script type="text/javascript" src="scripts/showPic.js"></script>-->
+    <script type="text/javascript" src="scripts/showPic.js"></script>
 </body>
 </html>
