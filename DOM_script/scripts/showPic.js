@@ -2,6 +2,9 @@
 function prepareGallery() {
     if(!document.getElementsByTagName) return false
     if(!document.getElementById) return false
+    if(!document.getElementById("gallery")) return false
+    var gallery = document.getElementById("gallery")
+    var links = gallery.getElementsByTagName("a")
 }
 
 function showPic(whichpic) {
