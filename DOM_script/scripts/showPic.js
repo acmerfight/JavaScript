@@ -1,4 +1,9 @@
 
+function prepareGallery() {
+    if(!document.getElementsByTagName) return false
+    if(!document.getElementById) return false
+}
+
 function showPic(whichpic) {
     var source = whichpic.getAttribute("href")
     var placeholder = document.getElementById("placeholder")
