@@ -5,6 +5,12 @@ function prepareGallery() {
     if(!document.getElementById("gallery")) return false
     var gallery = document.getElementById("gallery")
     var links = gallery.getElementsByTagName("a")
+    for(var i=0; i < links.length; i++) {
+        links[i].onclick = function() {
+            showPic(this)
+            return false
+        }
+    }
 }
 
 function showPic(whichpic) {
