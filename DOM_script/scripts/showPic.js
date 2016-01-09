@@ -1,4 +1,5 @@
 
+window.onload = prepareGallery
 function prepareGallery() {
     if(!document.getElementsByTagName) return false
     if(!document.getElementById) return false
@@ -23,7 +24,6 @@ function showPic(whichpic) {
 }
 
 
-window.onload = prepareLinks
 function prepareLinks() {
     var links = document.getElementsByTagName("a")
     for (var i=0; i<links.length; i++) {
