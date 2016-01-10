@@ -1,5 +1,16 @@
+function addLoadEvent(func) {
+    var oldonload = window.onload
+    if (typeof window.onload != "function") {
+        window.onload = func
+    } else {
+        window.onload = function() {
+            oldonload()
+            func()
+        }
+    }
+}
 
-window.onload = prepareGallery
+
 function prepareGallery() {
     if(!document.getElementsByTagName) return false
     if(!document.getElementById) return false
