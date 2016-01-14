@@ -21,6 +21,11 @@ li {
     padding: 1em;
     list-style: none;
 }
+img {
+    border: 0;
+    max-width: 650px;
+    max-height: 650px;
+}
 #imagegallery {
     list-style: none;
 }
@@ -29,6 +34,6 @@ li {
 }
 #imagegallery li a img {
     border: 0;
-    width: 200px;
+    max-width: 200px;
     height: 200px;
 }
