@@ -1,7 +1,5 @@
 
 
-addLoadEvent(insertParagraph)
-
 function addLoadEvent(func) {
     var old_load = window.onload
     if (typeof window.onload != "function") {
