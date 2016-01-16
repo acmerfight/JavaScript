@@ -16,6 +16,6 @@ function addLoadEvent(func) {
 function insertParagraph(text) {
     var str = "<p>"
     str += text
-    str += "</p>"
+    str += "</p> wawa"
     document.write(str)
 }
