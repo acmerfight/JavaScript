@@ -1,11 +1,10 @@
 
 window.onload = function() {
     var para = document.createElement("p")
-    var info = "nodeName: "
-    info += para.nodeName
-    info += " nodeType: "
-    info += para.nodeType
-    alert(info)
+    var testdiv = document.getElementById("testdiv")
+    testdiv.appendChild(para)
+    var txt = document.createTextNode("Hello world")
+    para.appendChild(txt)
 }
 
 function addLoadEvent(func) {
@@ -26,4 +25,13 @@ function insertParagraph(text) {
     str += text
     str += "</p> wawa"
     document.write(str)
+}
+
+function insertAfter(newElement, targetElement) {
+    var parent = targetElement.parentNode;
+    if (parent.lastChild = targetElement) {
+        parent.appendChild(newElement)
+    } else {
+        parent.insertBefore(newElement, targetElement.nextSibling)
+    }
 }
