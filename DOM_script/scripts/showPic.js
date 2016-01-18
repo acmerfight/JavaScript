@@ -1,3 +1,4 @@
+addLoadEvent(preparePlaceholder)
 addLoadEvent(prepareGallery)
 
 function addLoadEvent(func) {
@@ -20,7 +21,7 @@ function preparePlaceholder() {
     if(!document.getElementById("imagegallery")) return false
     var placeholder = document.createElement("img")
     placeholder.setAttribute("id", "placeholder")
-    placeholder.setAttribute("src", "images/1.jpeg")
+    placeholder.setAttribute("src", "../images/1.jpeg")
     placeholder.setAttribute("alt", "my image gallery")
     var description = document.createElement("p")
     description.setAttribute("id", "description")
