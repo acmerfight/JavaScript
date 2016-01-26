@@ -20,4 +20,9 @@ function  displayAbbreviations() {
         dlist.appendChild(dtitle)
         dlist.appendChild(ddesc)
     }
+    var header = document.createElement("h2")
+    var header_text = document.createTextNode("Abbreviations")
+    header.appendChild(header_text)
+    document.body.appendChild(header)
+    document.body.appendChild(dlist)
 }
