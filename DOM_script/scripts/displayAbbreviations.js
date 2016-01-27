@@ -1,4 +1,7 @@
 function  displayAbbreviations() {
+    if (!document.getElementsByTagName) return false
+    if (!document.createElement) return false
+    if (!document.createTextNode) return false
     var abbreviations = document.getElementsByTagName("abbr")
     if (abbreviations.length < 1) return false
     var defs = []
@@ -26,3 +29,5 @@ function  displayAbbreviations() {
     document.body.appendChild(header)
     document.body.appendChild(dlist)
 }
+
+addLoadEvent(displayAbbreviations)
