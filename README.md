@@ -1,7 +1,3 @@
 # learn front end
 
-layout
-
-javascript
-
-demo
+DOM script code
