@@ -5,5 +5,8 @@ function displayCitations() {
             continue
         }
         var url = quotes[i].getAttribute("cite")
+        var quoteChildren = quotes[i].getElementsByTagName('*')
+        if (quoteChildren.length < 1) continue
+        var elem = quoteChildren[quoteChildren.length - 1]
     }
 }
